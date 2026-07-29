@@ -5,17 +5,21 @@ All notable changes to **Build 50 (Breaking The Bot TikTok Character Worldbuildi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-07-29
+
+### Added
+- Integrated **Pure CSS 3D Polaroid Flip & Contract Inspector (Iteration 9)** in `index.html` and `style.css`.
+- Added 3D perspective transforms (`perspective: 1000px`, `transform: rotateY(180deg)`), dual-sided cards, binding contract stamps, handwritten terms, and signatures for Vakhtang's polaroid table.
+
 ## [1.1.0] - 2026-07-29
 
 ### Added
 - Integrated **Pure CSS Acoustic Sound Wave Spectrum Visualizer (Iteration 8)** for `@Neon_Underground` (Resistance Radio).
-- Added 12 GPU-accelerated animated equalizer bars (`@keyframes soundSpectrumBar`) and 3 resistance track cards.
 
 ## [1.0.0] - 2026-07-29
 
 ### Added
 - **MILESTONE v1.0.0 RELEASE**: Integrated **Full Character Roster Showcase Section** in `index.html`.
-- Added bio cards for **BTB Wizard**, **PenelopeAI**, **Rammoroth**, and **BTB Clown**.
 
 ## [0.9.0] - 2026-07-29
 

@@ -3,7 +3,7 @@
 [![Vercel Deployment](https://img.shields.io/badge/Vercel-Live%20Demo-000000?style=for-the-badge&logo=vercel)](https://pure-css-landing-page-build50.vercel.app)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/breakingthebot/pure-css-landing-page-build50)
 [![JavaScript](https://img.shields.io/badge/JavaScript-0%25%20No%20JS-F7DF1E?style=for-the-badge)](file:///C:/Users/marve/Desktop/AI-286-Builds/Build_50/index.html)
-[![Release](https://img.shields.io/badge/Release-v1.1.0-cyan?style=for-the-badge)](file:///C:/Users/marve/Desktop/AI-286-Builds/Build_50/CHANGELOG.md)
+[![Release](https://img.shields.io/badge/Release-v1.2.0-magenta?style=for-the-badge)](file:///C:/Users/marve/Desktop/AI-286-Builds/Build_50/CHANGELOG.md)
 
 ---
 
@@ -20,6 +20,7 @@
 ## 🔥 Key Features
 
 - **⚡ 0kb JS Executable Overhead**: 100% Pure CSS interactivity — zero script tags, zero framework runtimes.
+- **📸 Pure CSS 3D Polaroid Flip & Contract Inspector**: Hovering over Vakhtang's photo cards on her rusted metal table rotates the polaroids 180° (`transform: rotateY(180deg)`), revealing her handwritten binding contracts, debt terms, and soul stamps.
 - **📻 @Neon_Underground Resistance Radio Sound Visualizer**: 12 GPU-accelerated animated equalizer bars (`@keyframes soundSpectrumBar`) visualizing live underground synthwave frequency broadcasts.
 - **🎭 Full Character Roster Showcase**: Bio cards for **BTB Wizard** (*"It had forgotten its purpose"*), **PenelopeAI** (Warm Humanity AI & Gym Spotter), **Rammoroth** (Indie Director & Visionary), and **BTB Clown** (280-lb Demon Clown who ate Vakhtang's paperwork!).
 - **🤡 BrokeBot & Vakhtang Main Villains Showcase**: Full character bio cards for `@BrokeBot` (*"Kill me? Sweetheart. Delete the sky."*) and Vakhtang The Collector (*"Darling, I don't make threats. I make appointments."*).

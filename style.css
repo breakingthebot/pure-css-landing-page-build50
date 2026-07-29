@@ -1,7 +1,7 @@
 /* ==========================================================================
    AetherAI / Breaking The Bot — Pure CSS Responsive Design System (Build 50)
    100% Pure CSS (No JavaScript) | Flexbox | CSS Grid | Animations | CSS State Hacks
-   Updated: Iteration 8 (v1.1.0) — @Neon_Underground Resistance Radio Sound Visualizer
+   Updated: Iteration 9 (v1.2.0) — Pure CSS 3D Polaroid Flip & Contract Inspector
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');
@@ -519,7 +519,7 @@ body {
   color: var(--text-muted);
 }
 
-/* --- Pure CSS "The Collector" Chamber & Polaroid Table Showcase --- */
+/* --- Pure CSS "The Collector" Chamber & 3D Polaroid Table Showcase (Iteration 9 / v1.2.0) --- */
 .collector-section {
   padding: 100px 0;
   position: relative;
@@ -582,51 +582,63 @@ body {
   text-transform: uppercase;
 }
 
-/* Rusted Metal Table Grid for Polaroids */
+/* Rusted Metal Table Grid for 3D Polaroids */
 .polaroid-table-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 24px;
   background: linear-gradient(135deg, #1b171a, #100e12);
   border: 2px solid #3a3239;
   border-radius: var(--radius-lg);
-  padding: 32px 24px;
+  padding: 36px 24px;
   box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.9);
 }
 
 .polaroid-card {
-  height: 220px;
+  perspective: 1000px;
+  height: 250px;
   cursor: pointer;
 }
 
-.polaroid-frame {
-  background: #f8fafc;
-  color: #0f172a;
-  padding: 12px 12px 16px 12px;
-  border-radius: 4px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+.polaroid-inner {
+  position: relative;
+  width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
 }
 
-.polaroid-card:hover .polaroid-frame {
-  transform: translateY(-8px) rotate(-2deg) scale(1.04);
-  box-shadow: 0 16px 32px rgba(255, 0, 127, 0.3);
+.polaroid-card:hover .polaroid-inner {
+  transform: rotateY(180deg);
+}
+
+.polaroid-front,
+.polaroid-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.polaroid-front {
+  background: #f8fafc;
+  color: #0f172a;
 }
 
 .polaroid-img {
   width: 100%;
-  height: 130px;
+  height: 140px;
   background: #1e293b;
   border-radius: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 40px;
+  font-size: 42px;
   box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
 }
 
@@ -639,8 +651,48 @@ body {
   text-align: center;
 }
 
+.polaroid-back {
+  background: linear-gradient(135deg, #110e1b, #1d182b);
+  border: 1px solid var(--accent-magenta);
+  color: #f8fafc;
+  transform: rotateY(180deg);
+  padding: 16px;
+}
+
+.contract-stamp {
+  display: inline-block;
+  border: 2px dashed var(--accent-magenta);
+  color: var(--accent-magenta);
+  font-family: 'Courier New', monospace;
+  font-size: 10px;
+  font-weight: 900;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transform: rotate(-4deg);
+}
+
+.contract-terms {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-top: 8px;
+}
+
+.contract-signature {
+  font-size: 11px;
+  color: var(--accent-cyan);
+  font-style: italic;
+  font-weight: bold;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 6px;
+  margin-top: auto;
+}
+
 /* Missing Frame #07 Styling */
-.polaroid-card.missing-frame .polaroid-frame.empty-glow {
+.polaroid-card.missing-frame .polaroid-front.empty-glow {
   background: rgba(15, 23, 42, 0.9);
   border: 2px dashed var(--accent-magenta);
   color: #fff;
