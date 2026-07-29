@@ -3,7 +3,7 @@
 [![Vercel Deployment](https://img.shields.io/badge/Vercel-Live%20Demo-000000?style=for-the-badge&logo=vercel)](https://pure-css-landing-page-build50.vercel.app)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/breakingthebot/pure-css-landing-page-build50)
 [![JavaScript](https://img.shields.io/badge/JavaScript-0%25%20No%20JS-F7DF1E?style=for-the-badge)](file:///C:/Users/marve/Desktop/AI-286-Builds/Build_50/index.html)
-[![Release](https://img.shields.io/badge/Release-v0.8.0-blue?style=for-the-badge)](file:///C:/Users/marve/Desktop/AI-286-Builds/Build_50/CHANGELOG.md)
+[![Release](https://img.shields.io/badge/Release-v0.9.0-blue?style=for-the-badge)](file:///C:/Users/marve/Desktop/AI-286-Builds/Build_50/CHANGELOG.md)
 
 ---
 
@@ -20,6 +20,7 @@
 ## 🔥 Key Features
 
 - **⚡ 0kb JS Executable Overhead**: 100% Pure CSS interactivity — zero script tags, zero framework runtimes.
+- **🌟 About The Show Multiverse Architecture**: Overview of the 7-channel TikTok transmedia network detailing overlapping POV timelines and 4 key lore pillars.
 - **🤡 BrokeBot & Vakhtang Main Villains Showcase**: Full character bio cards for `@BrokeBot` (*"Kill me? Sweetheart. Delete the sky."*) and Vakhtang The Collector (*"Darling, I don't make threats. I make appointments."*).
 - **🎭 The Core Relationship Matrix (The Drama Engine)**: Grid detailing character dynamics (*The Villain Alliance*, *The War of the Ancients*, *The Endgame*, *Creative Partners*, *Gym Buddies*, *The Refused Deals & Paperwork Incident*).
 - **📺 Canonical TikTok Episode Tracker**: Direct links to official canonical episodes of *A BTB Wizard's Tale* (Episodes 1-4).
