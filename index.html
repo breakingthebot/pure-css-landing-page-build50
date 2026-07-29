@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AetherAI — Pure CSS Responsive Autonomous AI Landing Page</title>
-    <meta name="description" content="State-of-the-art Pure CSS responsive landing page built with Flexbox, CSS Grid, animations, and zero JavaScript." />
+    <meta name="description" content="State-of-the-art Pure CSS responsive landing page built with Flexbox, CSS Grid, animations, clip-path comparison slider, and zero JavaScript." />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -17,13 +17,20 @@
     <input type="radio" id="billing-monthly" name="billing-toggle" class="state-hack" />
     <input type="radio" id="billing-annual" name="billing-toggle" class="state-hack" checked />
 
+    <!-- Pure CSS Clip-Path Slider Radios -->
+    <input type="radio" id="clip-0" name="clip-slider" class="state-hack" />
+    <input type="radio" id="clip-25" name="clip-slider" class="state-hack" />
+    <input type="radio" id="clip-50" name="clip-slider" class="state-hack" checked />
+    <input type="radio" id="clip-75" name="clip-slider" class="state-hack" />
+    <input type="radio" id="clip-100" name="clip-slider" class="state-hack" />
+
     <div class="app-wrapper">
       <!-- Sticky Navigation Header -->
       <header class="navbar">
         <div class="container nav-container">
           <a href="#" class="brand-logo">
             ⚡ AETHER<span class="gradient-text">AI</span>
-            <span class="brand-badge">0kb JS Engine v0.1.0</span>
+            <span class="brand-badge">0kb JS Engine v0.2.0</span>
           </a>
 
           <!-- Pure CSS Mobile Hamburger Toggle Button -->
@@ -35,6 +42,7 @@
 
           <ul class="nav-menu">
             <li><a href="#features" class="nav-link">Features</a></li>
+            <li><a href="#comparison" class="nav-link">Workflow Compare</a></li>
             <li><a href="#demo" class="nav-link">Live Demo</a></li>
             <li><a href="#pricing" class="nav-link">Pricing</a></li>
             <li><a href="#testimonials" class="nav-link">Reviews</a></li>
@@ -76,8 +84,8 @@
               <a href="#trial-modal" class="btn btn-primary">
                 🚀 Deploy AI Agent Free
               </a>
-              <a href="#demo" class="btn btn-secondary">
-                ▶ Explore Interactive Demos
+              <a href="#comparison" class="btn btn-secondary">
+                ↔ Compare Workflows
               </a>
             </div>
 
@@ -134,7 +142,7 @@
       </section>
 
       <!-- Key Metrics Stats Banner -->
-      <section style="background: rgba(15, 23, 42, 0.6); border-y: 1px solid var(--border-glow); padding: 40px 0; border-top: 1px solid var(--border-glow); border-bottom: 1px solid var(--border-glow);">
+      <section style="background: rgba(15, 23, 42, 0.6); padding: 40px 0; border-top: 1px solid var(--border-glow); border-bottom: 1px solid var(--border-glow);">
         <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; text-align: center;">
           <div>
             <div style="font-family: var(--font-heading); font-size: 36px; font-weight: 900; color: var(--accent-cyan);">99.99%</div>
@@ -199,6 +207,89 @@
               <div class="feature-icon">🎨</div>
               <h3 class="feature-title">Adaptive Fluid Responsive Design</h3>
               <p class="feature-desc">Calculated fluid CSS typography and CSS Grid layout algorithms ensuring flawless rendering from mobile phones to 4K monitors.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pure CSS Animated Before / After Workflows Clip-Path Slider Section (Iteration 2) -->
+      <section id="comparison" class="comparison-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Interactive Workflow Comparison</span>
+            <h2 class="section-title">Before & After AetherAI Automation</h2>
+            <p class="section-subtitle">Click the split position chips below to slide the clip-path mask dynamically — 100% Pure CSS without a single line of JavaScript!</p>
+          </div>
+
+          <!-- Pure CSS Radio Controls for Clip-Path Split Position -->
+          <div class="clip-controls-row">
+            <label for="clip-0" class="clip-label">0% AetherAI (Legacy 100%)</label>
+            <label for="clip-25" class="clip-label">25% Split</label>
+            <label for="clip-50" class="clip-label">50% Balanced Split</label>
+            <label for="clip-75" class="clip-label">75% Split</label>
+            <label for="clip-100" class="clip-label">100% AetherAI Autonomous</label>
+          </div>
+
+          <div class="comparison-wrapper">
+            <!-- Layer 1: BEFORE (Legacy Manual Engineering - Underneath) -->
+            <div class="comparison-layer-before">
+              <div>
+                <span class="layer-badge-before">❌ BEFORE: Legacy Manual Engineering Cycle</span>
+                <h3 style="font-family: var(--font-heading); font-size: 28px; font-weight: 800; color: #fff; margin-top: 12px;">
+                  Slow, Error-Prone Manual Development (48+ Hours)
+                </h3>
+                <p style="font-size: 14px; color: var(--text-muted); margin-top: 6px; max-width: 600px;">
+                  Manual boilerplate writing, tedious test suite creation, git merge conflicts, and high JS hydration delay.
+                </p>
+              </div>
+
+              <div class="before-grid">
+                <div class="before-card">
+                  <div style="font-size: 24px; font-weight: 800; color: #ef4444;">48.0 Hours</div>
+                  <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Average Development Cycle Time</div>
+                </div>
+                <div class="before-card">
+                  <div style="font-size: 24px; font-weight: 800; color: #ef4444;">18.4% Error</div>
+                  <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Manual Bug Rate Per Release</div>
+                </div>
+                <div class="before-card">
+                  <div style="font-size: 24px; font-weight: 800; color: #ef4444;">340.5 ms</div>
+                  <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">JS Hydration Execution Delay</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Layer 2: AFTER (AetherAI Swarm Protocol - Clip-Path Overlay) -->
+            <div class="comparison-layer-after">
+              <div>
+                <span class="layer-badge-after">⚡ AFTER: AetherAI Autonomous Swarm</span>
+                <h3 style="font-family: var(--font-heading); font-size: 28px; font-weight: 800; color: #fff; margin-top: 12px;">
+                  Ultra-Fast Autonomous AI Execution (3.5 Minutes)
+                </h3>
+                <p style="font-size: 14px; color: var(--text-muted); margin-top: 6px; max-width: 600px;">
+                  Instant neural agent code generation, automated Vitest verification, and zero JavaScript runtime execution overhead.
+                </p>
+              </div>
+
+              <div class="after-grid">
+                <div class="after-card">
+                  <div style="font-size: 24px; font-weight: 800; color: var(--accent-cyan);">3.5 Minutes</div>
+                  <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Automated Delivery Speed</div>
+                </div>
+                <div class="after-card">
+                  <div style="font-size: 24px; font-weight: 800; color: #10b981;">99.8% Precision</div>
+                  <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Verified Unit Test Pass Rate</div>
+                </div>
+                <div class="after-card">
+                  <div style="font-size: 24px; font-weight: 800; color: var(--accent-magenta);">0.0 ms</div>
+                  <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Pure CSS Zero Hydration Delay</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Vertical Divider Handle Line -->
+            <div class="comparison-divider-line">
+              <div class="comparison-handle-knob">↔</div>
             </div>
           </div>
         </div>
@@ -489,6 +580,7 @@
               <h4 class="footer-col-title">Product</h4>
               <ul class="footer-links">
                 <li><a href="#features">Features Grid</a></li>
+                <li><a href="#comparison">Workflow Compare</a></li>
                 <li><a href="#demo">Live Demos</a></li>
                 <li><a href="#pricing">Pricing Plans</a></li>
                 <li><a href="#testimonials">Customer Reviews</a></li>
@@ -499,7 +591,7 @@
               <h4 class="footer-col-title">Resources</h4>
               <ul class="footer-links">
                 <li><a href="#faq">FAQ Knowledge Base</a></li>
-                <li><a href="CHANGELOG.md">Changelog v0.1.0</a></li>
+                <li><a href="CHANGELOG.md">Changelog v0.2.0</a></li>
                 <li><a href="README.md">Documentation</a></li>
                 <li><a href="https://github.com/breakingthebot/pure-css-landing-page-build50">GitHub Repository</a></li>
               </ul>
@@ -518,7 +610,7 @@
 
           <div class="footer-bottom">
             <span>© 2026 AetherAI Engine Inc. All rights reserved. Built with 100% Pure CSS.</span>
-            <span>⚡ Build 50 Release v0.1.0</span>
+            <span>⚡ Build 50 Release v0.2.0</span>
           </div>
         </div>
       </footer>
