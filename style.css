@@ -1,7 +1,7 @@
 /* ==========================================================================
    AetherAI — Pure CSS Responsive Landing Page Design System (Build 50)
    100% Pure CSS (No JavaScript) | Flexbox | CSS Grid | Animations | CSS State Hacks
-   Updated: Iteration 4 (v0.4.0) — Pure CSS @property Animated Dynamic Counters
+   Updated: Iteration 5 (v0.5.0) — Pure CSS Multi-Step Form Wizard Modal
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');
@@ -886,6 +886,68 @@ body {
   color: var(--accent-magenta);
 }
 
+/* --- Pure CSS Multi-Step Form Wizard Modal (Iteration 5) --- */
+.wizard-progress-bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.wizard-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-magenta));
+  width: 33.33%;
+  transition: width 0.4s ease;
+}
+
+#wizard-step-1:checked ~ .app-wrapper .wizard-progress-fill { width: 33.33%; }
+#wizard-step-2:checked ~ .app-wrapper .wizard-progress-fill { width: 66.66%; }
+#wizard-step-3:checked ~ .app-wrapper .wizard-progress-fill { width: 100%; }
+
+.wizard-steps-headers {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.wizard-step-badge {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+#wizard-step-1:checked ~ .app-wrapper .step-badge-1,
+#wizard-step-2:checked ~ .app-wrapper .step-badge-2,
+#wizard-step-3:checked ~ .app-wrapper .step-badge-3 {
+  background: rgba(0, 246, 255, 0.15);
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+  box-shadow: 0 0 12px rgba(0, 246, 255, 0.2);
+}
+
+.wizard-step-panel {
+  display: none;
+  animation: fadeIn 0.3s ease;
+}
+
+#wizard-step-1:checked ~ .app-wrapper .wizard-panel-1,
+#wizard-step-2:checked ~ .app-wrapper .wizard-panel-2,
+#wizard-step-3:checked ~ .app-wrapper .wizard-panel-3 {
+  display: block;
+}
+
 /* --- Pure CSS Interactive Product Demo Tabs Section --- */
 .demo-section {
   padding: 80px 0;
@@ -1298,7 +1360,7 @@ details[open] summary.faq-question::after {
   border-radius: var(--radius-xl);
   padding: 36px;
   width: 100%;
-  max-width: 520px;
+  max-width: 540px;
   box-shadow: var(--shadow-neon);
   transform: scale(0.9);
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -1326,15 +1388,15 @@ details[open] summary.faq-question::after {
 
 .modal-title {
   font-family: var(--font-heading);
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 800;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .modal-subtitle {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--text-muted);
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .form-group {

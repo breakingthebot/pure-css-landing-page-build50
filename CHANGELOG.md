@@ -5,6 +5,14 @@ All notable changes to **Build 50 (Pure CSS Responsive Landing Page)** will be d
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2026-07-29
+
+### Added
+- Integrated **Pure CSS Multi-Step Form Wizard Modal** inside `#trial-modal` in `index.html` and `style.css`.
+- Added `#wizard-step-1`, `#wizard-step-2`, and `#wizard-step-3` hidden state radio inputs.
+- Implemented visual progress fill bar transitioning dynamically from 33.3% to 100%.
+- Created 3 step onboarding panels (Account Info, Workflow & Token Specs, Cloud Deployment Target) with pure CSS forward/back label controls.
+
 ## [0.4.0] - 2026-07-29
 
 ### Added

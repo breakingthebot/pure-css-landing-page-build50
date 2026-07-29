@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AetherAI — Pure CSS Responsive Autonomous AI Landing Page</title>
-    <meta name="description" content="State-of-the-art Pure CSS responsive landing page built with Flexbox, CSS Grid, animations, clip-path comparison slider, notification toast streamer, dynamic @property counters, and zero JavaScript." />
+    <meta name="description" content="State-of-the-art Pure CSS responsive landing page built with Flexbox, CSS Grid, animations, clip-path comparison slider, notification toast streamer, dynamic @property counters, multi-step wizard modal, and zero JavaScript." />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -25,13 +25,18 @@
     <input type="radio" id="clip-75" name="clip-slider" class="state-hack" />
     <input type="radio" id="clip-100" name="clip-slider" class="state-hack" />
 
+    <!-- Pure CSS Multi-Step Form Wizard Radios (Iteration 5) -->
+    <input type="radio" id="wizard-step-1" name="wizard-steps" class="state-hack" checked />
+    <input type="radio" id="wizard-step-2" name="wizard-steps" class="state-hack" />
+    <input type="radio" id="wizard-step-3" name="wizard-steps" class="state-hack" />
+
     <div class="app-wrapper">
       <!-- Sticky Navigation Header -->
       <header class="navbar">
         <div class="container nav-container">
           <a href="#" class="brand-logo">
             ⚡ AETHER<span class="gradient-text">AI</span>
-            <span class="brand-badge">0kb JS Engine v0.4.0</span>
+            <span class="brand-badge">0kb JS Engine v0.5.0</span>
           </a>
 
           <!-- Pure CSS Mobile Hamburger Toggle Button -->
@@ -574,36 +579,86 @@
         </div>
       </div>
 
-      <!-- Pure CSS Modal Window Overlay (Triggered via :target) -->
+      <!-- Pure CSS Multi-Step Form Wizard Modal Overlay (Iteration 5 - Triggered via :target) -->
       <div id="trial-modal" class="modal-overlay">
         <div class="modal-card">
           <a href="#" class="modal-close-btn" title="Close Modal Window">✕</a>
-          <h2 class="modal-title">🚀 Start Your 14-Day Free Trial</h2>
-          <p class="modal-subtitle">Deploy your first autonomous AI subagent in under 60 seconds with zero credit card required.</p>
+          <h2 class="modal-title">🚀 Autonomous Agent Setup Wizard</h2>
+          <p class="modal-subtitle">Configure your neural swarm in 3 simple steps — 100% Pure CSS wizard with zero JavaScript!</p>
 
-          <form action="#" method="GET" style="display: flex; flex-direction: column; gap: 16px;">
-            <div class="form-group">
-              <label class="form-label">Full Name</label>
-              <input type="text" class="form-input" placeholder="e.g. Alex Vance" required />
+          <!-- Wizard Step Progress Bar Indicator -->
+          <div class="wizard-progress-bar">
+            <div class="wizard-progress-fill"></div>
+          </div>
+          <div class="wizard-steps-headers">
+            <label for="wizard-step-1" class="wizard-step-badge step-badge-1">1. Account</label>
+            <label for="wizard-step-2" class="wizard-step-badge step-badge-2">2. Workflow Specs</label>
+            <label for="wizard-step-3" class="wizard-step-badge step-badge-3">3. Deployment</label>
+          </div>
+
+          <form action="#" method="GET" style="margin-top: 16px;">
+            <!-- Step 1 Panel -->
+            <div class="wizard-step-panel wizard-panel-1">
+              <div class="form-group">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-input" placeholder="e.g. Alex Vance" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Work Email Address</label>
+                <input type="email" class="form-input" placeholder="alex@company.com" required />
+              </div>
+              <div style="display: flex; justify-content: flex-end; margin-top: 24px;">
+                <label for="wizard-step-2" class="btn btn-primary" style="cursor: pointer;">Next: Workflow Specs →</label>
+              </div>
             </div>
 
-            <div class="form-group">
-              <label class="form-label">Work Email Address</label>
-              <input type="email" class="form-input" placeholder="alex@company.com" required />
+            <!-- Step 2 Panel -->
+            <div class="wizard-step-panel wizard-panel-2">
+              <div class="form-group">
+                <label class="form-label">Primary Frontend Framework Stack</label>
+                <select class="form-input" style="background: var(--bg-dark); cursor: pointer;">
+                  <option>Pure HTML5 / CSS3 (0kb JS Payload)</option>
+                  <option>Qwik JSX Framework</option>
+                  <option>React / Next.js Stack</option>
+                  <option>Vue / Nuxt Framework</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Monthly Token Budget Allocation</label>
+                <select class="form-input" style="background: var(--bg-dark); cursor: pointer;">
+                  <option>5,000,000 Tokens / Month (Pro Suite)</option>
+                  <option>500,000 Tokens / Month (Starter Tier)</option>
+                  <option>Unlimited Enterprise Tokens</option>
+                </select>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-top: 24px;">
+                <label for="wizard-step-1" class="btn btn-secondary" style="cursor: pointer;">← Back</label>
+                <label for="wizard-step-3" class="btn btn-primary" style="cursor: pointer;">Next: Deployment →</label>
+              </div>
             </div>
 
-            <div class="form-group">
-              <label class="form-label">Preferred AI Model Tier</label>
-              <select class="form-input" style="background: var(--bg-dark); cursor: pointer;">
-                <option>Pro Agent Suite (Flash + Pro Models)</option>
-                <option>Starter Developer Tier</option>
-                <option>Enterprise Dedicated Instance</option>
-              </select>
+            <!-- Step 3 Panel -->
+            <div class="wizard-step-panel wizard-panel-3">
+              <div class="form-group">
+                <label class="form-label">Cloud Deployment Target</label>
+                <select class="form-input" style="background: var(--bg-dark); cursor: pointer;">
+                  <option>Vercel Edge Network</option>
+                  <option>AWS Serverless Infrastructure</option>
+                  <option>Google Cloud Platform (GCP)</option>
+                  <option>Private Dedicated Server</option>
+                </select>
+              </div>
+              <div class="form-group" style="display: flex; align-items: center; gap: 10px; margin-top: 14px;">
+                <input type="checkbox" id="chk-sandbox" checked style="accent-color: var(--accent-cyan); width: 18px; height: 18px; cursor: pointer;" />
+                <label for="chk-sandbox" style="font-size: 13px; color: var(--text-muted); cursor: pointer; user-select: none;">
+                  Enable Zero-Trust Sandbox & Audit Telemetry Logging
+                </label>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-top: 24px;">
+                <label for="wizard-step-2" class="btn btn-secondary" style="cursor: pointer;">← Back</label>
+                <button type="submit" class="btn btn-primary">🚀 Launch Swarm Sandbox Now</button>
+              </div>
             </div>
-
-            <button type="submit" class="btn btn-primary" style="margin-top: 8px; width: 100%;">
-              ⚡ Launch Agent Sandbox Now
-            </button>
           </form>
         </div>
       </div>
@@ -634,7 +689,7 @@
               <h4 class="footer-col-title">Resources</h4>
               <ul class="footer-links">
                 <li><a href="#faq">FAQ Knowledge Base</a></li>
-                <li><a href="CHANGELOG.md">Changelog v0.4.0</a></li>
+                <li><a href="CHANGELOG.md">Changelog v0.5.0</a></li>
                 <li><a href="README.md">Documentation</a></li>
                 <li><a href="https://github.com/breakingthebot/pure-css-landing-page-build50">GitHub Repository</a></li>
               </ul>
@@ -653,7 +708,7 @@
 
           <div class="footer-bottom">
             <span>© 2026 AetherAI Engine Inc. All rights reserved. Built with 100% Pure CSS.</span>
-            <span>⚡ Build 50 Release v0.4.0</span>
+            <span>⚡ Build 50 Release v0.5.0</span>
           </div>
         </div>
       </footer>

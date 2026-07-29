@@ -3,13 +3,13 @@
 [![Vercel Deployment](https://img.shields.io/badge/Vercel-Live%20Demo-000000?style=for-the-badge&logo=vercel)](https://pure-css-landing-page-build50.vercel.app)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/breakingthebot/pure-css-landing-page-build50)
 [![JavaScript](https://img.shields.io/badge/JavaScript-0%25%20No%20JS-F7DF1E?style=for-the-badge)](file:///C:/Users/marve/Desktop/AI-286-Builds/Build_50/index.html)
-[![Release](https://img.shields.io/badge/Release-v0.4.0-blue?style=for-the-badge)](file:///C:/Users/marve/Desktop/AI-286-Builds/Build_50/CHANGELOG.md)
+[![Release](https://img.shields.io/badge/Release-v0.5.0-blue?style=for-the-badge)](file:///C:/Users/marve/Desktop/AI-286-Builds/Build_50/CHANGELOG.md)
 
 ---
 
 ## 🌟 Overview
 
-**AetherAI** is a futuristic, ultra-fast landing page built entirely with **Pure HTML5 and CSS3** — with **Zero JavaScript**. Harnessing modern CSS Grid, CSS Flexbox, `@keyframes` GPU-accelerated keyframes, `@property` animated numeric counters, `:checked` state hacks, `:target` modal triggers, and `:checked` clip-path comparison sliders, AetherAI delivers a rich interactive experience with 0kb JS execution payload.
+**AetherAI** is a futuristic, ultra-fast landing page built entirely with **Pure HTML5 and CSS3** — with **Zero JavaScript**. Harnessing modern CSS Grid, CSS Flexbox, `@keyframes` GPU-accelerated keyframes, `@property` animated numeric counters, multi-step form wizard modal, `:checked` state hacks, `:target` modal triggers, and `:checked` clip-path comparison sliders, AetherAI delivers a rich interactive experience with 0kb JS execution payload.
 
 ### 🌐 Live Production Demo
 - **Live Vercel Application**: [https://pure-css-landing-page-build50.vercel.app](https://pure-css-landing-page-build50.vercel.app)
@@ -20,6 +20,7 @@
 ## 🔥 Key Features
 
 - **⚡ 0kb JS Executable Overhead**: 100% Pure CSS interactivity — zero script tags, zero framework runtimes.
+- **🧙‍♂️ Pure CSS Multi-Step Form Wizard Modal**: 3-step onboarding wizard inside `#trial-modal` with visual progress fill bar (33% -> 66% -> 100%) and pure CSS forward/back radio navigation controls (`#wizard-step-1` to `#wizard-step-3`).
 - **🔢 Pure CSS @property Animated Dynamic Counters**: Smooth numeric count-up animations for key metrics banner (`99.99%`, `4.2B+`, `120K+`) and hero social proof (`14,200+`) powered by CSS `@property` and `@keyframes`.
 - **💬 Pure CSS Interactive Notification Toast Streamer**: Ticking keyframe activity toasts cycling live user actions with glowing timer progress bars and pure CSS dismiss capabilities (`#toast-dismiss:checked`).
 - **↔ Pure CSS Animated Before / After Clip-Path Slider**: Interactive workflow split comparison revealing 48hr legacy coding vs. 3.5min AetherAI autonomous execution via pure CSS `clip-path` masks and radio state selectors (`#clip-0` to `#clip-100`).
