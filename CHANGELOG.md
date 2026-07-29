@@ -5,11 +5,16 @@ All notable changes to **Build 50 (Breaking The Bot TikTok Character Worldbuildi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2026-07-29
+
+### Added
+- Integrated **Comprehensive Character Dossier Vault Section (Iteration 11)** in `index.html`.
+- Added full bio cards for **Vakhtang**, **BrokeBot**, **BTB Wizard**, **PenelopeAI**, **Rammoroth**, and **BTB Clown**.
+
 ## [1.3.0] - 2026-07-29
 
 ### Added
 - Integrated **Pure CSS Character Lore Codex Modals (Iteration 10)** in `index.html`.
-- Added 6 classified character dossier modals (`#codex-brokebot`, `#codex-vakhtang`, `#codex-wizard`, `#codex-penelope`, `#codex-rammoroth`, `#codex-clown`) triggered natively via HTML `:target` selectors.
 
 ## [1.2.0] - 2026-07-29
 
