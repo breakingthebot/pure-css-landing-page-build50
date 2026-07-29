@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AetherAI — Pure CSS Responsive Autonomous AI Landing Page</title>
-    <meta name="description" content="State-of-the-art Pure CSS responsive landing page built with Flexbox, CSS Grid, animations, clip-path comparison slider, notification toast streamer, and zero JavaScript." />
+    <meta name="description" content="State-of-the-art Pure CSS responsive landing page built with Flexbox, CSS Grid, animations, clip-path comparison slider, notification toast streamer, dynamic @property counters, and zero JavaScript." />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -31,7 +31,7 @@
         <div class="container nav-container">
           <a href="#" class="brand-logo">
             ⚡ AETHER<span class="gradient-text">AI</span>
-            <span class="brand-badge">0kb JS Engine v0.3.0</span>
+            <span class="brand-badge">0kb JS Engine v0.4.0</span>
           </a>
 
           <!-- Pure CSS Mobile Hamburger Toggle Button -->
@@ -98,7 +98,7 @@
                 <div class="avatar">⚡</div>
               </div>
               <div class="social-text">
-                Joined by <strong>14,200+ Developers</strong> & DevOps Engineers globally
+                Joined by <strong class="counter-animated-devs"></strong> Developers & DevOps Engineers globally
               </div>
             </div>
           </div>
@@ -142,23 +142,23 @@
         </div>
       </section>
 
-      <!-- Key Metrics Stats Banner -->
+      <!-- Key Metrics Stats Banner with Pure CSS @property Animated Counters (Iteration 4) -->
       <section style="background: rgba(15, 23, 42, 0.6); padding: 40px 0; border-top: 1px solid var(--border-glow); border-bottom: 1px solid var(--border-glow);">
         <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; text-align: center;">
           <div>
-            <div style="font-family: var(--font-heading); font-size: 36px; font-weight: 900; color: var(--accent-cyan);">99.99%</div>
+            <div class="counter-animated-uptime" style="font-family: var(--font-heading); font-size: 36px; font-weight: 900; color: var(--accent-cyan);"></div>
             <div style="font-size: 13px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-top: 4px;">Uptime SLA Guarantee</div>
           </div>
           <div>
-            <div style="font-family: var(--font-heading); font-size: 36px; font-weight: 900; color: var(--accent-magenta);">4.2B+</div>
+            <div class="counter-animated-tokens" style="font-family: var(--font-heading); font-size: 36px; font-weight: 900; color: var(--accent-magenta);"></div>
             <div style="font-size: 13px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-top: 4px;">Tokens Processed Daily</div>
           </div>
           <div>
-            <div style="font-family: var(--font-heading); font-size: 36px; font-weight: 900; color: var(--accent-purple);">120K+</div>
+            <div class="counter-animated-workflows" style="font-family: var(--font-heading); font-size: 36px; font-weight: 900; color: var(--accent-purple);"></div>
             <div style="font-size: 13px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-top: 4px;">Automated Workflows</div>
           </div>
           <div>
-            <div style="font-family: var(--font-heading); font-size: 36px; font-weight: 900; color: var(--accent-emerald);">0 KB</div>
+            <div style="font-family: var(--font-heading); font-size: 36px; font-weight: 900; color: var(--accent-emerald);">0.0 KB</div>
             <div style="font-size: 13px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-top: 4px;">JavaScript Download Cost</div>
           </div>
         </div>
@@ -634,7 +634,7 @@
               <h4 class="footer-col-title">Resources</h4>
               <ul class="footer-links">
                 <li><a href="#faq">FAQ Knowledge Base</a></li>
-                <li><a href="CHANGELOG.md">Changelog v0.3.0</a></li>
+                <li><a href="CHANGELOG.md">Changelog v0.4.0</a></li>
                 <li><a href="README.md">Documentation</a></li>
                 <li><a href="https://github.com/breakingthebot/pure-css-landing-page-build50">GitHub Repository</a></li>
               </ul>
@@ -653,7 +653,7 @@
 
           <div class="footer-bottom">
             <span>© 2026 AetherAI Engine Inc. All rights reserved. Built with 100% Pure CSS.</span>
-            <span>⚡ Build 50 Release v0.3.0</span>
+            <span>⚡ Build 50 Release v0.4.0</span>
           </div>
         </div>
       </footer>

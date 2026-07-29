@@ -1,10 +1,79 @@
 /* ==========================================================================
    AetherAI — Pure CSS Responsive Landing Page Design System (Build 50)
    100% Pure CSS (No JavaScript) | Flexbox | CSS Grid | Animations | CSS State Hacks
-   Updated: Iteration 3 (v0.3.0) — Pure CSS Notification Toast Streamer
+   Updated: Iteration 4 (v0.4.0) — Pure CSS @property Animated Dynamic Counters
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
+/* --- CSS @property Definitions for Pure CSS Numeric Counter Animations --- */
+@property --counter-tokens {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@property --counter-workflows {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@property --counter-devs {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@property --counter-uptime {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@keyframes countUpTokens {
+  from { --counter-tokens: 0; }
+  to { --counter-tokens: 42; }
+}
+
+@keyframes countUpWorkflows {
+  from { --counter-workflows: 0; }
+  to { --counter-workflows: 120; }
+}
+
+@keyframes countUpDevs {
+  from { --counter-devs: 0; }
+  to { --counter-devs: 14200; }
+}
+
+@keyframes countUpUptime {
+  from { --counter-uptime: 0; }
+  to { --counter-uptime: 99; }
+}
+
+.counter-animated-tokens::after {
+  counter-reset: tokens var(--counter-tokens);
+  content: "4." counter(tokens) "B+";
+  animation: countUpTokens 3s cubic-bezier(0.1, 0.9, 0.2, 1) forwards;
+}
+
+.counter-animated-workflows::after {
+  counter-reset: wflows var(--counter-workflows);
+  content: counter(wflows) "K+";
+  animation: countUpWorkflows 3s cubic-bezier(0.1, 0.9, 0.2, 1) forwards;
+}
+
+.counter-animated-devs::after {
+  counter-reset: devs var(--counter-devs);
+  content: counter(devs) "+";
+  animation: countUpDevs 3.5s cubic-bezier(0.1, 0.9, 0.2, 1) forwards;
+}
+
+.counter-animated-uptime::after {
+  counter-reset: uptime var(--counter-uptime);
+  content: counter(uptime) ".99%";
+  animation: countUpUptime 2.5s cubic-bezier(0.1, 0.9, 0.2, 1) forwards;
+}
 
 /* --- CSS Theme Variables --- */
 :root {

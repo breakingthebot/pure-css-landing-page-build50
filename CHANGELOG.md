@@ -5,13 +5,19 @@ All notable changes to **Build 50 (Pure CSS Responsive Landing Page)** will be d
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2026-07-29
+
+### Added
+- Integrated **Pure CSS Dynamic Counter Animations** powered by CSS `@property` rules and `@keyframes`.
+- Added `@property --counter-tokens`, `--counter-workflows`, `--counter-devs`, and `--counter-uptime`.
+- Implemented smooth numeric count-up animations for key metrics banner (`99.99%`, `4.2B+`, `120K+`) and hero social proof banner (`14,200+`).
+
 ## [0.3.0] - 2026-07-29
 
 ### Added
 - Integrated **Pure CSS Interactive Notification Toast Streamer** in `index.html` and `style.css`.
 - Added `#toast-dismiss` hidden state input hack.
 - Created staggered `@keyframes toastPop` and `@keyframes toastProgress` keyframe sequences cycling live global user activity.
-- Added Pure CSS dismiss label button (`label[for="toast-dismiss"]`) allowing instant dismissal without JavaScript.
 
 ## [0.2.0] - 2026-07-29
 
