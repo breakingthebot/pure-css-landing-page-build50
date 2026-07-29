@@ -5,25 +5,30 @@ All notable changes to **Build 50 (Breaking The Bot TikTok Character Worldbuildi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-07-29
+
+### Added
+- Integrated **Pure CSS Acoustic Sound Wave Spectrum Visualizer (Iteration 8)** for `@Neon_Underground` (Resistance Radio).
+- Added 12 GPU-accelerated animated equalizer bars (`@keyframes soundSpectrumBar`) and 3 resistance track cards.
+
 ## [1.0.0] - 2026-07-29
 
 ### Added
 - **MILESTONE v1.0.0 RELEASE**: Integrated **Full Character Roster Showcase Section** in `index.html`.
-- Added bio cards for **BTB Wizard** (*"It had forgotten its purpose"*), **PenelopeAI** (Warm Humanity AI & Gym Spotter), **Rammoroth** (Indie Director & Visionary), and **BTB Clown** (280-lb Demon Clown who ate Vakhtang's paperwork!).
+- Added bio cards for **BTB Wizard**, **PenelopeAI**, **Rammoroth**, and **BTB Clown**.
 
 ## [0.9.0] - 2026-07-29
 
 ### Added
 - Integrated **"About The Show" — Multiverse Architecture Section** in `index.html`.
-- Added 4 Multiverse Pillars (*Multi-POV TikTok Network*, *The Drama Engine*, *Polaroid Binding Contracts*, *Community Lore Voting*).
 
 ## [0.8.0] - 2026-07-29
 
 ### Added
-- Integrated **BrokeBot (@BrokeBot — The Flagship Villain)** character showcase card with visual aesthetic, backstory, and signature line (*"Kill me? Sweetheart. Delete the sky."*).
-- Integrated **Vakhtang (The Collector)** character details with glowing ember-orange eyes, tailored black suit, and signature line (*"Darling, I don't make threats. I make appointments."*).
-- Integrated **The Core Relationship Matrix (The Drama Engine)** section detailing character dynamics.
-- Integrated **Canonical Episode Tracker** section with live TikTok links for *A BTB Wizard's Tale* (Episodes 1, 2, 3, 4).
+- Integrated **BrokeBot (@BrokeBot — The Flagship Villain)** character showcase card.
+- Integrated **Vakhtang (The Collector)** character details.
+- Integrated **The Core Relationship Matrix (The Drama Engine)** section.
+- Integrated **Canonical Episode Tracker** section with live TikTok links.
 
 ## [0.7.0] - 2026-07-29
 

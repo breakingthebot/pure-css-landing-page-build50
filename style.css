@@ -1,7 +1,7 @@
 /* ==========================================================================
    AetherAI / Breaking The Bot — Pure CSS Responsive Design System (Build 50)
    100% Pure CSS (No JavaScript) | Flexbox | CSS Grid | Animations | CSS State Hacks
-   Updated: Iteration 7 (v0.7.0) — "The Collector" Polaroid Table Showcase
+   Updated: Iteration 8 (v1.1.0) — @Neon_Underground Resistance Radio Sound Visualizer
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');
@@ -176,12 +176,6 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientShift 6s ease infinite;
-}
-
-.gradient-text-alt {
-  background: linear-gradient(135deg, #10b981, var(--accent-cyan));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 /* --- Sticky Glass Header Navbar --- */
@@ -525,7 +519,7 @@ body {
   color: var(--text-muted);
 }
 
-/* --- Pure CSS "The Collector" Chamber & Polaroid Table Showcase (Iteration 7) --- */
+/* --- Pure CSS "The Collector" Chamber & Polaroid Table Showcase --- */
 .collector-section {
   padding: 100px 0;
   position: relative;
@@ -659,6 +653,54 @@ body {
   animation: pulseGlow 2s infinite;
 }
 
+/* --- Pure CSS Acoustic Sound Wave Visualizer (Iteration 8 / v1.1.0) --- */
+.radio-spectrum-container {
+  background: linear-gradient(180deg, #090d1a, #030409);
+  border: 1px solid var(--accent-cyan);
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  box-shadow: 0 0 30px rgba(0, 246, 255, 0.2);
+  margin-top: 40px;
+}
+
+.spectrum-bars-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 6px;
+  height: 90px;
+  padding: 16px 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+  margin-bottom: 24px;
+}
+
+.equalizer-bar {
+  width: 10px;
+  background: linear-gradient(to top, var(--accent-cyan), var(--accent-magenta));
+  border-radius: 4px;
+  height: 20%;
+  animation: soundSpectrumBar 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes soundSpectrumBar {
+  0% { height: 15%; }
+  50% { height: 95%; }
+  100% { height: 35%; }
+}
+
+.equalizer-bar:nth-child(1) { animation-delay: 0.1s; }
+.equalizer-bar:nth-child(2) { animation-delay: 0.4s; }
+.equalizer-bar:nth-child(3) { animation-delay: 0.2s; }
+.equalizer-bar:nth-child(4) { animation-delay: 0.6s; }
+.equalizer-bar:nth-child(5) { animation-delay: 0.3s; }
+.equalizer-bar:nth-child(6) { animation-delay: 0.5s; }
+.equalizer-bar:nth-child(7) { animation-delay: 0.1s; }
+.equalizer-bar:nth-child(8) { animation-delay: 0.7s; }
+.equalizer-bar:nth-child(9) { animation-delay: 0.4s; }
+.equalizer-bar:nth-child(10) { animation-delay: 0.2s; }
+.equalizer-bar:nth-child(11) { animation-delay: 0.8s; }
+.equalizer-bar:nth-child(12) { animation-delay: 0.3s; }
+
 /* --- Features Grid Section --- */
 .features-section {
   padding: 80px 0;
@@ -758,7 +800,7 @@ body {
   line-height: 1.6;
 }
 
-/* --- Pure CSS Clip-Path Before / After Comparison Slider Section (Iteration 2) --- */
+/* --- Pure CSS Clip-Path Before / After Comparison Slider Section --- */
 .comparison-section {
   padding: 90px 0;
   position: relative;
@@ -943,7 +985,7 @@ body {
 #clip-100:checked ~ .app-wrapper .comparison-layer-after { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
 #clip-100:checked ~ .app-wrapper .comparison-divider-line { left: 100%; }
 
-/* --- Pure CSS Interactive Notification Toast Streamer (Iteration 3) --- */
+/* --- Pure CSS Interactive Notification Toast Streamer --- */
 #toast-dismiss:checked ~ .app-wrapper .toast-streamer {
   display: none;
 }
@@ -1020,7 +1062,7 @@ body {
   color: var(--accent-magenta);
 }
 
-/* --- Pure CSS Multi-Step Form Wizard Modal (Iteration 5) --- */
+/* --- Pure CSS Multi-Step Form Wizard Modal --- */
 .wizard-progress-bar {
   width: 100%;
   height: 6px;
