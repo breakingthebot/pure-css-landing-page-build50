@@ -1,15 +1,15 @@
-# Build 50: Pure CSS Responsive Landing Page
+# Build 50: Breaking The Bot — TikTok Character Worldbuilding Multiverse
 
 [![Vercel Deployment](https://img.shields.io/badge/Vercel-Live%20Demo-000000?style=for-the-badge&logo=vercel)](https://pure-css-landing-page-build50.vercel.app)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/breakingthebot/pure-css-landing-page-build50)
 [![JavaScript](https://img.shields.io/badge/JavaScript-0%25%20No%20JS-F7DF1E?style=for-the-badge)](file:///C:/Users/marve/Desktop/AI-286-Builds/Build_50/index.html)
-[![Release](https://img.shields.io/badge/Release-v0.5.0-blue?style=for-the-badge)](file:///C:/Users/marve/Desktop/AI-286-Builds/Build_50/CHANGELOG.md)
+[![Release](https://img.shields.io/badge/Release-v0.6.0-blue?style=for-the-badge)](file:///C:/Users/marve/Desktop/AI-286-Builds/Build_50/CHANGELOG.md)
 
 ---
 
 ## 🌟 Overview
 
-**AetherAI** is a futuristic, ultra-fast landing page built entirely with **Pure HTML5 and CSS3** — with **Zero JavaScript**. Harnessing modern CSS Grid, CSS Flexbox, `@keyframes` GPU-accelerated keyframes, `@property` animated numeric counters, multi-step form wizard modal, `:checked` state hacks, `:target` modal triggers, and `:checked` clip-path comparison sliders, AetherAI delivers a rich interactive experience with 0kb JS execution payload.
+**Breaking The Bot** is a content creator landing page showcasing an immersive sci-fi character worldbuilding universe told across **7 interconnected TikTok accounts**. Built with **Pure HTML5 and CSS3** — with **Zero JavaScript**. Harnessing modern CSS Grid, CSS Flexbox, `@keyframes` GPU-accelerated keyframes, `@property` animated numeric counters, multi-step fan onboarding wizard modal, `:checked` radio state hacks, `:target` modal triggers, and `:checked` clip-path territory comparison sliders, Breaking The Bot delivers a rich interactive experience with 0kb JS execution payload.
 
 ### 🌐 Live Production Demo
 - **Live Vercel Application**: [https://pure-css-landing-page-build50.vercel.app](https://pure-css-landing-page-build50.vercel.app)
@@ -20,15 +20,13 @@
 ## 🔥 Key Features
 
 - **⚡ 0kb JS Executable Overhead**: 100% Pure CSS interactivity — zero script tags, zero framework runtimes.
-- **🧙‍♂️ Pure CSS Multi-Step Form Wizard Modal**: 3-step onboarding wizard inside `#trial-modal` with visual progress fill bar (33% -> 66% -> 100%) and pure CSS forward/back radio navigation controls (`#wizard-step-1` to `#wizard-step-3`).
-- **🔢 Pure CSS @property Animated Dynamic Counters**: Smooth numeric count-up animations for key metrics banner (`99.99%`, `4.2B+`, `120K+`) and hero social proof (`14,200+`) powered by CSS `@property` and `@keyframes`.
+- **📱 7 TikTok Accounts Showcase Grid**: Central hub featuring `@BreakingTheBot`, `@Neural_Outcasts`, `@Cyber_Glitch_POV`, `@Synth_Archive`, `@Aether_Agents_POV`, `@Neon_Underground`, and `@Bot_Inc_Corporate`.
+- **⚔️ Pure CSS Faction Explorer Tabs**: Interactive tabs allowing fans to switch between 3 core factions (*Neural Outcasts Hackers*, *Glitch Entities & POVs*, *Bot Inc. Corporate Command*).
+- **↔ Pure CSS World Alignment Clip-Path Slider**: Territory comparison slider comparing Corporate Control vs Breaking The Bot Resistance Territory using pure CSS `clip-path` masks.
+- **🧙‍♂️ Pure CSS Multi-Step Fan Setup Wizard Modal**: 3-step fan onboarding wizard inside `#trial-modal` with visual progress fill bar (33% -> 66% -> 100%) and pure CSS forward/back radio navigation controls.
+- **🔢 Pure CSS @property Animated Dynamic Counters**: Smooth numeric count-up animations for total TikTok views, character episodes, and global fan count.
 - **💬 Pure CSS Interactive Notification Toast Streamer**: Ticking keyframe activity toasts cycling live user actions with glowing timer progress bars and pure CSS dismiss capabilities (`#toast-dismiss:checked`).
-- **↔ Pure CSS Animated Before / After Clip-Path Slider**: Interactive workflow split comparison revealing 48hr legacy coding vs. 3.5min AetherAI autonomous execution via pure CSS `clip-path` masks and radio state selectors (`#clip-0` to `#clip-100`).
-- **📱 Pure CSS Responsive Mobile Navigation**: Hamburger menu drawer toggling seamlessly via hidden checkbox selectors (`#nav-toggle:checked ~ nav`).
 - **🌙 Pure CSS Dark / Cyber Light Theme Switcher**: Dynamic CSS variable palette swapping (`var(--bg-main)`, `var(--text-main)`) via top-level container state.
-- **💰 Pure CSS Monthly / Annual Billing Switcher**: Reactive pricing plan card price recalculation via hidden radio inputs.
+- **💰 Pure CSS Fan Guild Memberships Switcher**: Reactive pricing plan card price recalculation via hidden radio inputs.
 - **❓ Pure CSS Interactive FAQ Accordion**: Smooth expand/collapse animation powered by HTML5 `<details>` / `<summary>` and CSS transitions.
-- **🪟 Pure CSS Modal Window Overlay**: Glassmorphism popup modal triggered via CSS `:target` pseudo-class (`#trial-modal:target`).
-- **✨ Pure CSS Hero Floating Animations**: Glowing ambient background circles and floating UI preview cards powered by `@keyframes floatHero`.
-- **📐 Responsive CSS Grid & Flexbox**: Fluid 3-column feature showcase grid (`repeat(auto-fit, minmax(280px, 1fr))`) and Flexbox hero headers.
 - **🎠 Pure CSS Scroll Snap Testimonial Carousel**: Smooth horizontal touch/drag carousel powered by CSS `scroll-snap-type: x mandatory`.
