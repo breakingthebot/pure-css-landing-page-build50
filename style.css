@@ -1,7 +1,7 @@
 /* ==========================================================================
-   AetherAI — Pure CSS Responsive Landing Page Design System (Build 50)
+   AetherAI / Breaking The Bot — Pure CSS Responsive Design System (Build 50)
    100% Pure CSS (No JavaScript) | Flexbox | CSS Grid | Animations | CSS State Hacks
-   Updated: Iteration 5 (v0.5.0) — Pure CSS Multi-Step Form Wizard Modal
+   Updated: Iteration 7 (v0.7.0) — "The Collector" Polaroid Table Showcase
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');
@@ -53,13 +53,13 @@
 
 .counter-animated-tokens::after {
   counter-reset: tokens var(--counter-tokens);
-  content: "4." counter(tokens) "B+";
+  content: "4." counter(tokens) "M+";
   animation: countUpTokens 3s cubic-bezier(0.1, 0.9, 0.2, 1) forwards;
 }
 
 .counter-animated-workflows::after {
   counter-reset: wflows var(--counter-workflows);
-  content: counter(wflows) "K+";
+  content: counter(wflows) "+";
   animation: countUpWorkflows 3s cubic-bezier(0.1, 0.9, 0.2, 1) forwards;
 }
 
@@ -71,7 +71,7 @@
 
 .counter-animated-uptime::after {
   counter-reset: uptime var(--counter-uptime);
-  content: counter(uptime) ".99%";
+  content: counter(uptime) ".9%";
   animation: countUpUptime 2.5s cubic-bezier(0.1, 0.9, 0.2, 1) forwards;
 }
 
@@ -523,6 +523,140 @@ body {
 .stat-lbl {
   font-size: 11px;
   color: var(--text-muted);
+}
+
+/* --- Pure CSS "The Collector" Chamber & Polaroid Table Showcase (Iteration 7) --- */
+.collector-section {
+  padding: 100px 0;
+  position: relative;
+  background: radial-gradient(circle at 50% 30%, rgba(255, 0, 127, 0.08), transparent 70%);
+}
+
+.collector-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 50px auto;
+}
+
+.collector-chamber {
+  background: linear-gradient(180deg, #0b0914, #040308);
+  border: 1px solid rgba(255, 0, 127, 0.3);
+  border-radius: var(--radius-xl);
+  padding: 48px 32px;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), inset 0 0 40px rgba(255, 0, 127, 0.05);
+  overflow: hidden;
+}
+
+.hanging-lightbulb {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  filter: drop-shadow(0 0 16px rgba(245, 158, 11, 0.8));
+  animation: bulbFlicker 4s infinite;
+  user-select: none;
+}
+
+@keyframes bulbFlicker {
+  0%, 100% { opacity: 1; transform: translateX(-50%) rotate(0deg); }
+  30% { opacity: 0.4; }
+  32% { opacity: 1; }
+  68% { opacity: 0.2; }
+  70% { opacity: 0.9; }
+  85% { transform: translateX(-50%) rotate(3deg); }
+}
+
+.collector-lore-banner {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+.collector-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 0, 127, 0.15);
+  border: 1px solid var(--accent-magenta);
+  color: var(--accent-magenta);
+  font-size: 11px;
+  font-weight: 800;
+  padding: 4px 14px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+/* Rusted Metal Table Grid for Polaroids */
+.polaroid-table-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  background: linear-gradient(135deg, #1b171a, #100e12);
+  border: 2px solid #3a3239;
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+.polaroid-card {
+  height: 220px;
+  cursor: pointer;
+}
+
+.polaroid-frame {
+  background: #f8fafc;
+  color: #0f172a;
+  padding: 12px 12px 16px 12px;
+  border-radius: 4px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.polaroid-card:hover .polaroid-frame {
+  transform: translateY(-8px) rotate(-2deg) scale(1.04);
+  box-shadow: 0 16px 32px rgba(255, 0, 127, 0.3);
+}
+
+.polaroid-img {
+  width: 100%;
+  height: 130px;
+  background: #1e293b;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+.polaroid-caption {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  color: #334155;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* Missing Frame #07 Styling */
+.polaroid-card.missing-frame .polaroid-frame.empty-glow {
+  background: rgba(15, 23, 42, 0.9);
+  border: 2px dashed var(--accent-magenta);
+  color: #fff;
+  box-shadow: 0 0 20px rgba(255, 0, 127, 0.4);
+}
+
+.empty-icon {
+  background: transparent !important;
+  color: var(--accent-magenta);
+  animation: pulseGlow 2s infinite;
 }
 
 /* --- Features Grid Section --- */

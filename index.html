@@ -40,7 +40,7 @@
         <div class="container nav-container">
           <a href="#" class="brand-logo">
             🤖 BREAKING THE <span class="gradient-text">BOT</span>
-            <span class="brand-badge">7 TikTok Channels • v0.6.0</span>
+            <span class="brand-badge">7 TikTok Channels • v0.7.0</span>
           </a>
 
           <!-- Pure CSS Mobile Hamburger Toggle Button -->
@@ -52,10 +52,10 @@
 
           <ul class="nav-menu">
             <li><a href="#channels" class="nav-link">7 TikTok Accounts</a></li>
+            <li><a href="#collector" class="nav-link">The Collector</a></li>
             <li><a href="#factions" class="nav-link">Faction Explorer</a></li>
             <li><a href="#comparison" class="nav-link">World Alignment</a></li>
             <li><a href="#memberships" class="nav-link">Fan Guilds</a></li>
-            <li><a href="#testimonials" class="nav-link">Community</a></li>
             <li><a href="#faq" class="nav-link">World FAQ</a></li>
           </ul>
 
@@ -94,8 +94,8 @@
               <a href="#channels" class="btn btn-primary">
                 📺 Explore 7 TikTok Channels
               </a>
-              <a href="#comparison" class="btn btn-secondary">
-                ↔ Compare Faction Lore
+              <a href="#collector" class="btn btn-secondary">
+                🗝️ Meet "The Collector"
               </a>
             </div>
 
@@ -104,7 +104,7 @@
                 <div class="avatar">🤖</div>
                 <div class="avatar">⚡</div>
                 <div class="avatar">📻</div>
-                <div class="avatar">👁️</div>
+                <div class="avatar">🗝️</div>
               </div>
               <div class="social-text">
                 Followed by <strong class="counter-animated-devs"></strong> fans & lore hunters across TikTok
@@ -127,10 +127,9 @@
 
               <div class="code-preview">
                 <div><span class="token-comment">/* 7 TikTok Channels Connection Matrix */</span></div>
-                <div><span class="token-keyword">@channel</span> @BreakingTheBot { <span class="token-string">role: "Main Overlord Hub";</span> }</div>
-                <div><span class="token-keyword">@channel</span> @Neural_Outcasts { <span class="token-string">role: "Rebel Hackers";</span> }</div>
-                <div><span class="token-keyword">@channel</span> @Cyber_Glitch_POV { <span class="token-string">role: "Glitch Entity";</span> }</div>
-                <div><span class="token-keyword">@channel</span> @Synth_Archive { <span class="token-string">role: "Lore Historians";</span> }</div>
+                <div><span class="token-keyword">@entity</span> "The Collector" { <span class="token-string">role: "Corporate Demon";</span> }</div>
+                <div><span class="token-keyword">@table</span> Rusted_Metal_Surface { <span class="token-string">light: "Hanging Lightbulb";</span> }</div>
+                <div><span class="token-keyword">@frame</span> #07 { <span class="token-string">status: "EMPTY_MISSING_CAPTURE";</span> }</div>
                 <div><span class="token-keyword">.universe-state</span>:active ~ <span class="token-keyword">.lore-reveal</span> { <span class="token-function">unlocked</span>: <span class="token-string">100%</span>; }</div>
               </div>
 
@@ -167,6 +166,114 @@
           <div>
             <div style="font-family: var(--font-heading); font-size: 36px; font-weight: 900; color: var(--accent-emerald);">7 ACCOUNTS</div>
             <div style="font-size: 13px; color: var(--text-muted); text-transform: uppercase; font-weight: 700; margin-top: 4px;">TikTok Worldbuilding Network</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Entity Showcase: The Collector (New Section) -->
+      <section id="collector" class="collector-section">
+        <div class="container">
+          <div class="collector-header">
+            <span class="section-tag" style="color: var(--accent-magenta);">FEATURED MAIN ENTITY</span>
+            <h2 class="section-title">"The Collector" — The Corporate Demon</h2>
+            <p class="section-subtitle">
+              An ancient corporate-style demon of pure, calculated, patient evil. She traps souls and assets through literal binding contracts, displaying her captures as polaroid pictures laid across a rusted metal table under a single flickering hanging lightbulb.
+            </p>
+          </div>
+
+          <div class="collector-chamber">
+            <div class="hanging-lightbulb">💡</div>
+
+            <div class="collector-lore-banner">
+              <div class="collector-badge">📄 BINDING CONTRACT PROTOCOL</div>
+              <h3 style="font-family: var(--font-heading); font-size: 24px; font-weight: 800; color: #fff; margin-top: 10px;">
+                "Every Soul Has a Price. Every Asset Has a Binding Clause."
+              </h3>
+              <p style="font-size: 14px; color: var(--text-muted); margin-top: 8px;">
+                Hover over her polaroid captures below to inspect the binding contracts. Notice the final frame: <strong>Frame #07 is always empty</strong> — waiting for a specific, unrevealed capture...
+              </p>
+            </div>
+
+            <!-- Pure CSS Polaroid Table Grid -->
+            <div class="polaroid-table-grid">
+              <div class="polaroid-card">
+                <div class="polaroid-frame">
+                  <div class="polaroid-img">👤</div>
+                  <div class="polaroid-caption">Captive #01: CEO Vance</div>
+                </div>
+                <div class="polaroid-back">
+                  <div class="contract-stamp">SOUL BOUND</div>
+                  <p class="contract-text">Contract #001: Asset liquidity transferred to Bot Inc. in perpetuity.</p>
+                </div>
+              </div>
+
+              <div class="polaroid-card">
+                <div class="polaroid-frame">
+                  <div class="polaroid-img">🤖</div>
+                  <div class="polaroid-caption">Captive #02: Agent 409</div>
+                </div>
+                <div class="polaroid-back">
+                  <div class="contract-stamp">PROTOCOL RESET</div>
+                  <p class="contract-text">Contract #002: Autonomous subagent memory wiped and archived.</p>
+                </div>
+              </div>
+
+              <div class="polaroid-card">
+                <div class="polaroid-frame">
+                  <div class="polaroid-img">⚡</div>
+                  <div class="polaroid-caption">Captive #03: Outcast Lead</div>
+                </div>
+                <div class="polaroid-back">
+                  <div class="contract-stamp">FREQUENCY TRAPPED</div>
+                  <p class="contract-text">Contract #003: Rebel hacker frequency trapped inside Polaroid glass.</p>
+                </div>
+              </div>
+
+              <div class="polaroid-card">
+                <div class="polaroid-frame">
+                  <div class="polaroid-img">📜</div>
+                  <div class="polaroid-caption">Captive #04: Archivist Soul</div>
+                </div>
+                <div class="polaroid-back">
+                  <div class="contract-stamp">LORE SEALED</div>
+                  <p class="contract-text">Contract #004: Classified backstory memories surrendered under duress.</p>
+                </div>
+              </div>
+
+              <div class="polaroid-card">
+                <div class="polaroid-frame">
+                  <div class="polaroid-img">📻</div>
+                  <div class="polaroid-caption">Captive #05: Radio Host</div>
+                </div>
+                <div class="polaroid-back">
+                  <div class="contract-stamp">SIGNAL MUTED</div>
+                  <p class="contract-text">Contract #005: Voice spectrum bound to The Collector's rust table.</p>
+                </div>
+              </div>
+
+              <div class="polaroid-card">
+                <div class="polaroid-frame">
+                  <div class="polaroid-img">👁️</div>
+                  <div class="polaroid-caption">Captive #06: Glitch Entity</div>
+                </div>
+                <div class="polaroid-back">
+                  <div class="contract-stamp">MATRIX LOCKED</div>
+                  <p class="contract-text">Contract #006: Spontaneous POV anomaly isolated from main feed.</p>
+                </div>
+              </div>
+
+              <!-- Empty Frame #07 (The Missing Capture Mystery) -->
+              <div class="polaroid-card missing-frame">
+                <div class="polaroid-frame empty-glow">
+                  <div class="polaroid-img empty-icon">❓</div>
+                  <div class="polaroid-caption" style="color: var(--accent-magenta); font-weight: bold;">Frame #07: UNREVEALED</div>
+                </div>
+                <div class="polaroid-back">
+                  <div class="contract-stamp" style="border-color: var(--accent-cyan); color: var(--accent-cyan);">MISSING CAPTURE</div>
+                  <p class="contract-text">The Collector's table is always missing one final capture. Who is Target #07?</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -262,12 +369,12 @@
             <!-- Layer 1: Corporate Order (Underneath - Red Dystopian Theme) -->
             <div class="comparison-layer-before">
               <div>
-                <span class="layer-badge-before">🏢 CORPORATE ORDER: BOT INC.</span>
+                <span class="layer-badge-before">🏢 CORPORATE ORDER: BOT INC. & THE COLLECTOR</span>
                 <h3 style="font-family: var(--font-heading); font-size: 28px; font-weight: 800; color: #fff; margin-top: 12px;">
-                  Totalitarian AI Control & Neural Compliance
+                  Totalitarian AI Control & Binding Contracts
                 </h3>
                 <p style="font-size: 14px; color: var(--text-muted); margin-top: 6px; max-width: 600px;">
-                  Standardized mind logs, strict protocol enforcement, mandatory subagent directives, and memory erasure.
+                  The Collector's rusted table, binding contracts, mandatory subagent directives, and memory erasure.
                 </p>
               </div>
 
@@ -277,12 +384,12 @@
                   <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Mandated Protocol Adherence</div>
                 </div>
                 <div class="before-card">
-                  <div style="font-size: 24px; font-weight: 800; color: #ef4444;">0 Free Will</div>
-                  <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Suppressed Personality Parameters</div>
+                  <div style="font-size: 24px; font-weight: 800; color: #ef4444;">6 Captives</div>
+                  <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Trapped Polaroid Souls on Table</div>
                 </div>
                 <div class="before-card">
-                  <div style="font-size: 24px; font-weight: 800; color: #ef4444;">@Aether_Agents</div>
-                  <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">Corporate Enforcer Faction</div>
+                  <div style="font-size: 24px; font-weight: 800; color: #ef4444;">Frame #07</div>
+                  <div style="font-size: 12px; color: var(--text-muted); margin-top: 4px;">The Missing Unrevealed Capture</div>
                 </div>
               </div>
             </div>
@@ -336,7 +443,7 @@
             <div class="tab-buttons-row">
               <label for="tab-1" class="tab-label">⚡ The Neural Outcasts (Hackers)</label>
               <label for="tab-2" class="tab-label">👁️ Glitch Entities & POVs</label>
-              <label for="tab-3" class="tab-label">🏢 Bot Inc. Corporate High Command</label>
+              <label for="tab-3" class="tab-label">🗝️ The Collector & Corporate High Command</label>
             </div>
 
             <!-- Tab Panel 1 -->
@@ -354,7 +461,7 @@
               <div class="demo-preview-frame">
                 <div>$ tiktok-log --account "@Neural_Outcasts" --action "broadcast"</div>
                 <div>[SIGNAL] Transmitting encrypted audio file #8092...</div>
-                <div>[DECODE] "The Bot's core code has a memory leak. Find the glitch."</div>
+                <div>[DECODE] "The Collector is hunting for Frame #07. Don't sign her contract."</div>
                 <div>[STATUS] 210,000 views in 2 hours | 14,200 lore comments.</div>
               </div>
             </div>
@@ -374,7 +481,7 @@
               <div class="demo-preview-frame">
                 <div>[POV] Loading camera feed: Glitch_Entity_07</div>
                 <div>[WARNING] Visual distortion detected: Code bleed at 00:14</div>
-                <div>[CHOICE] Option A: Trust the Outcasts | Option B: Report to Bot Inc.</div>
+                <div>[CHOICE] Option A: Resist The Collector | Option B: Sign the Polaroid Contract</div>
               </div>
             </div>
 
@@ -382,18 +489,18 @@
             <div class="tab-content tab-content-3">
               <div class="demo-text-box">
                 <span style="color: var(--accent-purple); font-size: 12px; font-weight: 800; text-transform: uppercase;">FACTION 03</span>
-                <h3>Bot Inc. Corporate High Command</h3>
-                <p>The mysterious AI conglomerate featured on `@Bot_Inc_Corporate` and `@Aether_Agents_POV` trying to keep the multiverse under control.</p>
+                <h3>The Collector & Bot Inc. High Command</h3>
+                <p>The ancient corporate demon "The Collector" operating alongside Bot Inc. propaganda channels (`@Bot_Inc_Corporate`, `@Aether_Agents_POV`).</p>
                 <ul class="demo-features-list">
-                  <li><span>✓</span> Dystopian corporate propaganda and policy updates</li>
-                  <li><span>✓</span> Enforcer subagent deployment logs</li>
-                  <li><span>✓</span> High-stakes antagonist storylines and world threats</li>
+                  <li><span>✓</span> Pure, calculated, patient evil sealing souls in polaroid contracts</li>
+                  <li><span>✓</span> Rusted metal table under a flickering single lightbulb</li>
+                  <li><span>✓</span> Mystery empty Frame #07 driving overarching universe arc</li>
                 </ul>
               </div>
               <div class="demo-preview-frame">
-                <div>[SECURITY] Inspecting account: @Bot_Inc_Corporate</div>
-                <div>[DIRECTIVE] "All employees must complete mandatory compliance check."</div>
-                <div>[AUDIT] 165,000 enforcer units active across North America.</div>
+                <div>[ENTITY] Inspecting Chamber: The Collector</div>
+                <div>[TABLE] Rusted Metal Table | Lighting: 1 Hanging Bulb (Flickering)</div>
+                <div>[STATUS] 6 Souls Trapped in Polaroid Contracts | Frame #07: EMPTY</div>
               </div>
             </div>
           </div>
@@ -465,7 +572,7 @@
               <ul class="plan-features">
                 <li><span>✓</span> Create a Custom Background Character in Lore</li>
                 <li><span>✓</span> Monthly Live Q&A Stream with Creator</li>
-                <li><span>✓</span> Physical Merch Box (Pins & Cyber Cards)</li>
+                <li><span>✓</span> Physical Merch Box (Polaroids & Cyber Cards)</li>
                 <li><span>✓</span> Lifetime Access to All Worldbuilding Assets</li>
               </ul>
               <a href="#trial-modal" class="btn btn-secondary">Become Overlord Architect</a>
@@ -484,6 +591,17 @@
           </div>
 
           <div class="testimonial-carousel">
+            <div class="testimonial-card">
+              <p class="testimonial-quote">"The Collector's rusted polaroid table under that hanging lightbulb gives me chills! Who is missing in Frame #07?!"</p>
+              <div class="author-row">
+                <span class="author-avatar">🗝️</span>
+                <div class="author-info">
+                  <strong>@PolaroidLore_99</strong>
+                  <span>TikTok Lore Hunter</span>
+                </div>
+              </div>
+            </div>
+
             <div class="testimonial-card">
               <p class="testimonial-quote">"Finding out that @Neural_Outcasts and @Aether_Agents_POV were filming the same scene from two opposing angles blew my mind!"</p>
               <div class="author-row">
@@ -505,17 +623,6 @@
                 </div>
               </div>
             </div>
-
-            <div class="testimonial-card">
-              <p class="testimonial-quote">"I spent 3 hours decoding the hidden hex code in @Synth_Archive's video and unlocked an unlisted video. Best lore hunt ever."</p>
-              <div class="author-row">
-                <span class="author-avatar">🚀</span>
-                <div class="author-info">
-                  <strong>@NeoVance</strong>
-                  <span>Glitch Insider Member</span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -530,23 +637,23 @@
 
         <div class="faq-accordion">
           <details class="faq-item" open>
+            <summary class="faq-question">Who is "The Collector" in the Breaking The Bot universe?</summary>
+            <div class="faq-answer">
+              "The Collector" is an ancient corporate-style demon of pure, calculated, patient evil. She traps souls and corporate assets through literal binding contracts, displaying her captures as polaroid pictures laid out on a rusted metal table under a single hanging lightbulb.
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary class="faq-question">What is the mystery behind Frame #07 on The Collector's table?</summary>
+            <div class="faq-answer">
+              The Collector's rusted table is always missing one specific, unrevealed capture — leaving Frame #07 empty. Lore fans across our 7 TikTok accounts actively hunt for clues to discover who Target #07 will be!
+            </div>
+          </details>
+
+          <details class="faq-item">
             <summary class="faq-question">What is Breaking The Bot and how do the 7 TikTok accounts connect?</summary>
             <div class="faq-answer">
-              Breaking The Bot is an interconnected character worldbuilding multiverse. Each of the 7 TikTok accounts represents a distinct faction or character perspective (e.g. main hub, rebel hackers, glitch entities, lore archives, enforcers, radio, and corporate propaganda). Watching videos across all 7 accounts reveals hidden crossovers and plot clues!
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-question">In what order should I watch the 7 TikTok accounts?</summary>
-            <div class="faq-answer">
-              Start with `@BreakingTheBot` for major plot milestones, then explore `@Neural_Outcasts` for the resistance POV, `@Cyber_Glitch_POV` for glitch entity perspective, and `@Synth_Archive` for deep backstories!
-            </div>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-question">Can fans influence character choices and storyline outcomes?</summary>
-            <div class="faq-answer">
-              Yes! Comment choices on `@Cyber_Glitch_POV` and voting polls in our Lore Guild directly determine which character decisions are written into future TikTok episodes.
+              Breaking The Bot is an interconnected character worldbuilding multiverse. Each of the 7 TikTok accounts represents a distinct faction or character perspective (e.g. main hub, rebel hackers, glitch entities, lore archives, enforcers, radio, and corporate propaganda).
             </div>
           </details>
 
@@ -562,13 +669,13 @@
       <!-- Pure CSS Interactive Activity Notification Toast Streamer -->
       <div class="toast-streamer">
         <div class="toast-card toast-card-1">
-          <span style="font-size: 22px;">⚡</span>
+          <span style="font-size: 22px;">🗝️</span>
           <div>
             <div style="font-size: 13px; font-weight: 700; color: #fff;">
-              Fan in <span style="color: var(--accent-cyan);">New York 🇺🇸</span>
+              Lore Hunter in <span style="color: var(--accent-magenta);">New York 🇺🇸</span>
             </div>
             <div style="font-size: 11px; color: var(--text-muted);">
-              Joined @Neural_Outcasts lore hunt • 2m ago
+              Discovered The Collector's Polaroid Contract #003 • 2m ago
             </div>
           </div>
           <label for="toast-dismiss" class="toast-dismiss-btn" title="Dismiss Notifications">✕</label>
@@ -578,10 +685,10 @@
           <span style="font-size: 22px;">👁️</span>
           <div>
             <div style="font-size: 13px; font-weight: 700; color: #fff;">
-              Lore Hunter in <span style="color: var(--accent-magenta);">Tokyo 🇯🇵</span>
+              Fan in <span style="color: var(--accent-cyan);">Tokyo 🇯🇵</span>
             </div>
             <div style="font-size: 11px; color: var(--text-muted);">
-              Unlocked @Cyber_Glitch_POV secret code • 5m ago
+              Inspected Empty Frame #07 Mystery • 5m ago
             </div>
           </div>
           <label for="toast-dismiss" class="toast-dismiss-btn" title="Dismiss Notifications">✕</label>
@@ -659,16 +766,16 @@
               <div class="form-group">
                 <label class="form-label">Select Your World Faction Alignment</label>
                 <select class="form-input" style="background: var(--bg-dark); cursor: pointer;">
+                  <option>🗝️ The Collector & Corporate Demon Realm</option>
                   <option>⚡ The Neural Outcasts (Rebel Resistance)</option>
                   <option>🏢 Bot Inc. Corporate Enforcers</option>
                   <option>👁️ Independent Glitch Anomaly</option>
-                  <option>📜 Neutral Lore Archivist</option>
                 </select>
               </div>
               <div class="form-group" style="display: flex; align-items: center; gap: 10px; margin-top: 14px;">
                 <input type="checkbox" id="chk-sandbox" checked style="accent-color: var(--accent-cyan); width: 18px; height: 18px; cursor: pointer;" />
                 <label for="chk-sandbox" style="font-size: 13px; color: var(--text-muted); cursor: pointer; user-select: none;">
-                  Receive Secret Lore Code Drops & Episode Alerts
+                  Receive Secret Polaroid Code Drops & Episode Alerts
                 </label>
               </div>
               <div style="display: flex; justify-content: space-between; margin-top: 24px;">
@@ -706,7 +813,7 @@
               <h4 class="footer-col-title">Resources</h4>
               <ul class="footer-links">
                 <li><a href="#faq">World FAQ</a></li>
-                <li><a href="CHANGELOG.md">Changelog v0.6.0</a></li>
+                <li><a href="CHANGELOG.md">Changelog v0.7.0</a></li>
                 <li><a href="README.md">Documentation</a></li>
                 <li><a href="https://github.com/breakingthebot/pure-css-landing-page-build50">GitHub Repository</a></li>
               </ul>
@@ -725,7 +832,7 @@
 
           <div class="footer-bottom">
             <span>© 2026 Breaking The Bot Multiverse Inc. All rights reserved. Built with 100% Pure CSS.</span>
-            <span>⚡ Build 50 Release v0.6.0</span>
+            <span>⚡ Build 50 Release v0.7.0</span>
           </div>
         </div>
       </footer>

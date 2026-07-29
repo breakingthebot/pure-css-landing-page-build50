@@ -5,6 +5,14 @@ All notable changes to **Build 50 (Breaking The Bot TikTok Character Worldbuildi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.7.0] - 2026-07-29
+
+### Added
+- Integrated **"The Collector" — Ancient Corporate Demon Character Showcase** in `index.html` and `style.css`.
+- Added `#collector` chamber section featuring a flickering hanging lightbulb (`@keyframes bulbFlicker`).
+- Implemented **Pure CSS Polaroid Rusted Table Grid** displaying 6 soul binding contracts and glowing mystery **Frame #07**.
+- Added The Collector lore backstories to Faction Explorer tabs, FAQ accordion, and activity toast streamer.
+
 ## [0.6.0] - 2026-07-29
 
 ### Added
@@ -13,7 +21,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Pivoted **Pure CSS Interactive Tabs** into Faction Explorer panels (*Neural Outcasts*, *Glitch Entities & POVs*, *Bot Inc. Corporate Command*).
 - Pivoted **Pure CSS Clip-Path Slider** into World Alignment Territory Comparison (Corporate Control vs Resistance).
 - Pivoted **Pure CSS Multi-Step Wizard Modal** into 3-step Fan Guild Registration Wizard.
-- Maintained 100% Zero JavaScript execution constraint across all components.
 
 ## [0.5.0] - 2026-07-29
 
