@@ -1,0 +1,15 @@
+# Git Ignore Rules for Build 50
+
+# SOP Directives - DO NOT REMOVE
+AGENTS.md
+BUILD_NOTES.md
+BUILD_NOTES*.md
+
+# Dependencies & Build Outputs
+node_modules/
+dist/
+build/
+.cache/
+*.log
+.DS_Store
+Thumbs.db
