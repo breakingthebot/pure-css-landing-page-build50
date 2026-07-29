@@ -1,7 +1,7 @@
 /* ==========================================================================
    AetherAI — Pure CSS Responsive Landing Page Design System (Build 50)
    100% Pure CSS (No JavaScript) | Flexbox | CSS Grid | Animations | CSS State Hacks
-   Updated: Iteration 2 (v0.2.0) — Pure CSS Before/After Clip-Path Slider
+   Updated: Iteration 3 (v0.3.0) — Pure CSS Notification Toast Streamer
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');
@@ -588,7 +588,6 @@ body {
   color: var(--text-main);
 }
 
-/* Radio Control Checked States for Clip-Path Split */
 #clip-0:checked ~ .app-wrapper label[for="clip-0"],
 #clip-25:checked ~ .app-wrapper label[for="clip-25"],
 #clip-50:checked ~ .app-wrapper label[for="clip-50"],
@@ -612,7 +611,6 @@ body {
   border: 1px solid var(--border-glow);
 }
 
-/* Layer 1: BEFORE (Underneath - Red Warning / Legacy Theme) */
 .comparison-layer-before {
   position: absolute;
   inset: 0;
@@ -652,7 +650,6 @@ body {
   padding: 20px;
 }
 
-/* Layer 2: AFTER (Overlay with clip-path - Cyber Cyan/Magenta Theme) */
 .comparison-layer-after {
   position: absolute;
   inset: 0;
@@ -696,7 +693,6 @@ body {
   box-shadow: 0 0 20px rgba(0, 246, 255, 0.15);
 }
 
-/* Vertical Split Line Indicator */
 .comparison-divider-line {
   position: absolute;
   top: 0;
@@ -729,40 +725,96 @@ body {
   font-weight: 800;
 }
 
-/* Pure CSS Radio State Clip-Path Triggers */
-#clip-0:checked ~ .app-wrapper .comparison-layer-after {
-  clip-path: polygon(0 0, 0% 0, 0% 100%, 0 100%);
-}
-#clip-0:checked ~ .app-wrapper .comparison-divider-line {
-  left: 0%;
+#clip-0:checked ~ .app-wrapper .comparison-layer-after { clip-path: polygon(0 0, 0% 0, 0% 100%, 0 100%); }
+#clip-0:checked ~ .app-wrapper .comparison-divider-line { left: 0%; }
+
+#clip-25:checked ~ .app-wrapper .comparison-layer-after { clip-path: polygon(0 0, 25% 0, 25% 100%, 0 100%); }
+#clip-25:checked ~ .app-wrapper .comparison-divider-line { left: 25%; }
+
+#clip-50:checked ~ .app-wrapper .comparison-layer-after { clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%); }
+#clip-50:checked ~ .app-wrapper .comparison-divider-line { left: 50%; }
+
+#clip-75:checked ~ .app-wrapper .comparison-layer-after { clip-path: polygon(0 0, 75% 0, 75% 100%, 0 100%); }
+#clip-75:checked ~ .app-wrapper .comparison-divider-line { left: 75%; }
+
+#clip-100:checked ~ .app-wrapper .comparison-layer-after { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+#clip-100:checked ~ .app-wrapper .comparison-divider-line { left: 100%; }
+
+/* --- Pure CSS Interactive Notification Toast Streamer (Iteration 3) --- */
+#toast-dismiss:checked ~ .app-wrapper .toast-streamer {
+  display: none;
 }
 
-#clip-25:checked ~ .app-wrapper .comparison-layer-after {
-  clip-path: polygon(0 0, 25% 0, 25% 100%, 0 100%);
-}
-#clip-25:checked ~ .app-wrapper .comparison-divider-line {
-  left: 25%;
-}
-
-#clip-50:checked ~ .app-wrapper .comparison-layer-after {
-  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
-}
-#clip-50:checked ~ .app-wrapper .comparison-divider-line {
-  left: 50%;
+.toast-streamer {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 250;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  pointer-events: none;
 }
 
-#clip-75:checked ~ .app-wrapper .comparison-layer-after {
-  clip-path: polygon(0 0, 75% 0, 75% 100%, 0 100%);
-}
-#clip-75:checked ~ .app-wrapper .comparison-divider-line {
-  left: 75%;
+.toast-card {
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid var(--accent-cyan);
+  border-radius: var(--radius-md);
+  padding: 12px 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  pointer-events: auto;
+  min-width: 320px;
+  max-width: 380px;
+  position: relative;
+  overflow: hidden;
+  animation: toastPop 18s ease-in-out infinite;
 }
 
-#clip-100:checked ~ .app-wrapper .comparison-layer-after {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+.toast-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-magenta));
+  animation: toastProgress 6s linear infinite;
+  width: 100%;
 }
-#clip-100:checked ~ .app-wrapper .comparison-divider-line {
-  left: 100%;
+
+.toast-card-1 { animation-delay: 0s; }
+.toast-card-2 { animation-delay: 6s; }
+.toast-card-3 { animation-delay: 12s; }
+
+@keyframes toastPop {
+  0%, 30% { opacity: 1; transform: translateY(0) scale(1); visibility: visible; }
+  33%, 97% { opacity: 0; transform: translateY(20px) scale(0.95); visibility: hidden; }
+  100% { opacity: 1; transform: translateY(0) scale(1); visibility: visible; }
+}
+
+@keyframes toastProgress {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+.toast-dismiss-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 2px 6px;
+  transition: color 0.2s ease;
+  user-select: none;
+}
+
+.toast-dismiss-btn:hover {
+  color: var(--accent-magenta);
 }
 
 /* --- Pure CSS Interactive Product Demo Tabs Section --- */
@@ -809,7 +861,6 @@ body {
   border-color: var(--accent-cyan);
 }
 
-/* Tab Panel Switching via Pure CSS :checked State */
 .tab-content {
   display: none;
   animation: fadeIn 0.4s ease;
@@ -1330,6 +1381,15 @@ details[open] summary.faq-question::after {
   }
   .comparison-wrapper {
     min-height: 560px;
+  }
+  .toast-streamer {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+  }
+  .toast-card {
+    min-width: unset;
+    width: 100%;
   }
 }
 
