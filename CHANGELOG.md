@@ -5,6 +5,12 @@ All notable changes to **Build 50 (Breaking The Bot TikTok Character Worldbuildi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.0] - 2026-07-29
+
+### Added
+- **MILESTONE v1.0.0 RELEASE**: Integrated **Full Character Roster Showcase Section** in `index.html`.
+- Added bio cards for **BTB Wizard** (*"It had forgotten its purpose"*), **PenelopeAI** (Warm Humanity AI & Gym Spotter), **Rammoroth** (Indie Director & Visionary), and **BTB Clown** (280-lb Demon Clown who ate Vakhtang's paperwork!).
+
 ## [0.9.0] - 2026-07-29
 
 ### Added
