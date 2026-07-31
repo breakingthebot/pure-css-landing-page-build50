@@ -2,8 +2,8 @@
 
 [![Vercel Deployment](https://img.shields.io/badge/Vercel-Live%20Demo-000000?style=for-the-badge&logo=vercel)](https://pure-css-landing-page-build50.vercel.app)
 [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/breakingthebot/pure-css-landing-page-build50)
-[![JavaScript](https://img.shields.io/badge/JavaScript-0%25%20No%20JS-F7DF1E?style=for-the-badge)](file:///C:/Users/marve/Desktop/AI-286-Builds/Build_50/index.html)
-[![Release](https://img.shields.io/badge/Release-v1.4.0-emerald?style=for-the-badge)](file:///C:/Users/marve/Desktop/AI-286-Builds/Build_50/CHANGELOG.md)
+[![JavaScript](https://img.shields.io/badge/JavaScript-0%25%20No%20JS-F7DF1E?style=for-the-badge)](https://github.com/breakingthebot/pure-css-landing-page-build50/blob/main/index.html)
+[![Release](https://img.shields.io/badge/Release-v1.4.0-emerald?style=for-the-badge)](https://github.com/breakingthebot/pure-css-landing-page-build50/blob/main/CHANGELOG.md)
 
 ---
 
